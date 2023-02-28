@@ -1,9 +1,10 @@
 const options = ["rock", "paper", "scissors"];
 
+let playerSelection = prompt("Rock, Paper or Scissors")
+
 function getComputerSelection(){
   const random = [Math.floor(Math.random() * options.length)];
-  const computerChoice = options[random];
-  return computerChoice;
+  return computerChoice = options[random];
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -24,7 +25,6 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-playRound(playerSelection, computerSelection);
-
-console.log(playRound);
+const computerSelection = getComputerSelection();
+console.log(playRound(playerSelection, computerSelection));
 
